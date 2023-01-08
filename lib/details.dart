@@ -13,7 +13,7 @@ class _detailsState extends State<details> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Left Bran'),
+          title: Text('Left Brain'),
           centerTitle: true,
           backgroundColor: Colors.black,
         ),
