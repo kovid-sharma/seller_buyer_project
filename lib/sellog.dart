@@ -44,7 +44,7 @@ class _sellogState extends State<sellog> {
               ),
                 onPressed: ()
                 {
-
+                    Navigator.pushNamed(context, 'sead');
                 },
                 icon: FaIcon(FontAwesomeIcons.google,color: Colors.orange,),
                 label: Text('Continue with Google'),
