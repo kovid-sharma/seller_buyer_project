@@ -2,8 +2,10 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:seller_buyer_project/buylog.dart';
 import 'package:seller_buyer_project/buyview.dart';
+import 'package:seller_buyer_project/googlesignin.dart';
 import 'package:seller_buyer_project/selload.dart';
 import 'package:seller_buyer_project/sellog.dart';
 import 'choose.dart';
@@ -11,7 +13,9 @@ import 'details.dart';
 
 void main()
 {
-  runApp(MaterialApp(
+  runApp(
+      MaterialApp(
+    
     debugShowCheckedModeBanner: false,
     initialRoute: 'chse',
     routes: {
@@ -21,6 +25,7 @@ void main()
       'sead': (context) => sellload(),
       'buew': (context) => buyview(),
       'details':(context)=>details(),
+      'sign':(context)=>ChangeNotifierProvider(create: (context)=>GoogleSignInProvider()),
     },
 
   ));

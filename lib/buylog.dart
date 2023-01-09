@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 class buylog extends StatefulWidget {
   const buylog({Key? key}) : super(key: key);
@@ -45,6 +46,7 @@ class _buylogState extends State<buylog> {
               ),
               onPressed: ()
               {
+                    GoogleSignIn().signIn();
                     Navigator.pushNamed(context, 'buew');
               },
               icon: FaIcon(FontAwesomeIcons.google,color: Colors.orange,),
