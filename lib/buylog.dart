@@ -23,6 +23,17 @@ class _buylogState extends State<buylog> {
           SizedBox(
             height: 20,
           ),
+          Container(
+
+            height: 200,
+            child: Image.asset('assets/lb-logo-4.jpg',
+
+              width: double.infinity,
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
           Expanded(
             flex: 6,
             child:Container(

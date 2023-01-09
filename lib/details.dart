@@ -25,6 +25,17 @@ class _detailsState extends State<details> {
         ),
         body: Column(
           children: [
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+
+              height: 200,
+              child: Image.asset('assets/lb-logo-4.jpg',
+
+                width: double.infinity,
+              ),
+            ),
             Container(
 
               child: Text(

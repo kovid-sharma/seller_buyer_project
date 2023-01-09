@@ -18,6 +18,17 @@ class _chooseState extends State<choose> {
       body:
          Column(
           children: [
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+
+              height: 200,
+              child: Image.asset('assets/lb-logo-4.jpg',
+
+                width: double.infinity,
+              ),
+            ),
             Expanded(
                 flex: 8,
               child: Container(

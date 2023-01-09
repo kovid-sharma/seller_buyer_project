@@ -19,6 +19,18 @@ class _sellogState extends State<sellog> {
       ),
       body: Column(
         children: [
+
+          SizedBox(
+            height: 20,
+          ),
+          Container(
+
+            height: 200,
+            child: Image.asset('assets/lb-logo-4.jpg',
+
+            width: double.infinity,
+            ),
+          ),
           SizedBox(
             height: 20,
           ),
