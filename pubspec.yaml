@@ -43,6 +43,7 @@ dependencies:
   images_picker: ^1.2.11
   image_picker: ^0.8.6
   firebase_storage: ^11.0.10
+  flutter_speed_dial: ^6.2.0
 
 
 dev_dependencies:
