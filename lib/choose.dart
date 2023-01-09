@@ -78,7 +78,7 @@ class _chooseState extends State<choose> {
 
                 child: Container(
 
-                  width: double.infinity,
+
                   color: Colors.black,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
