@@ -46,11 +46,11 @@ class _buylogState extends State<buylog> {
               ),
               onPressed: ()
               {
-                    GoogleSignIn().signIn();
+
                     Navigator.pushNamed(context, 'buew');
               },
-              icon: FaIcon(FontAwesomeIcons.google,color: Colors.orange,),
-              label: Text('Continue with Google'),
+              icon: FaIcon(FontAwesomeIcons.manatSign),
+              label: Text('Continue as Anonymous'),
             ),
           ),
           Expanded(

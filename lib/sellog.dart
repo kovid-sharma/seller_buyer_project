@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 class sellog extends StatefulWidget {
   const sellog({Key? key}) : super(key: key);
 
@@ -46,8 +47,8 @@ class _sellogState extends State<sellog> {
                 {
                     Navigator.pushNamed(context, 'sead');
                 },
-                icon: FaIcon(FontAwesomeIcons.google,color: Colors.orange,),
-                label: Text('Continue with Google'),
+               icon: FaIcon(FontAwesomeIcons.manatSign),
+                label: Text('Continue as Anonymous'),
             ),
           ),
           Expanded(
