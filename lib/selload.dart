@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 class sellload extends StatefulWidget {
   const sellload({Key? key}) : super(key: key);
 
@@ -46,9 +47,16 @@ class _sellloadState extends State<sellload> {
                     height: 40,
                   ),
                  FloatingActionButton(
-                   onPressed: ()
-                   {
+                   onPressed:()
+                   async {
+                     final ImagePicker _picker = ImagePicker();
 
+
+                     final XFile? image = await _picker.pickVideo(source: ImageSource.gallery);
+                     // Capture a video
+                     final XFile? video = await _picker.pickVideo(source: ImageSource.camera);
+
+                     print('${image?.path}');
                    },
                    backgroundColor: Colors.greenAccent.shade700,
                    child: Text('+',
